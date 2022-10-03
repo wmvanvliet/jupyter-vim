@@ -96,7 +96,7 @@ function! jupyter#Disconnect(...) abort
     python3 _jupyter_session.disconnect_from_kernel()
 endfunction
 
-function! jupyter#JupyterCd(...) abort 
+function! jupyter#JupyterCd(...) abort
     " Behaves just like typical `cd`.
     let l:dirname = a:0 ? a:1 : '$HOME'
     " Helpers:
